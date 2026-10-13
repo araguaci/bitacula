@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Bitácula</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div id="login" class="gate">
+    <section class="gate-copy">
+      <p class="eyebrow">Diário de bordo</p>
+      <h1>Bitácula</h1>
+      <p class="lede">Recursos do servidor, bancos e o acesso do laboratório. A entrada exige usuário e senha, e o endereço só abre nos IPs já liberados.</p>
+      <ul>
+        <li>Uso de CPU, memória e disco</li>
+        <li>PostgreSQL, MySQL e Redis</li>
+        <li>IP do laboratório nas portas dos bancos</li>
+        <li>Cópias de segurança do Postgres</li>
+      </ul>
+    </section>
+    <form id="login-form" class="card gate-form">
+      <h2>Entrar</h2>
+      <label>Usuário<input name="username" autocomplete="username" required></label>
+      <label>Senha<input name="password" type="password" autocomplete="current-password" required></label>
+      <p id="login-error" class="error" hidden></p>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <div id="app" class="shell" hidden>
+    <aside class="side">
+      <div>
+        <p class="eyebrow">Diário de bordo</p>
+        <strong class="brand">Bitácula</strong>
+      </div>
+      <nav>
+        <button type="button" data-view="overview" class="active">Visão geral</button>
+        <button type="button" data-view="databases">Bancos</button>
+        <button type="button" data-view="containers">Containers</button>
+        <button type="button" data-view="access">Acesso</button>
+        <button type="button" data-view="backups">Backups</button>
+      </nav>
+      <div class="side-foot">
+        <span id="who"></span>
+        <button type="button" id="logout" class="ghost">Sair</button>
+      </div>
+    </aside>
+    <main>
+      <header class="top">
+        <div>
+          <h2 id="title">Visão geral</h2>
+          <p id="subtitle"></p>
+        </div>
+        <time id="clock"></time>
+      </header>
+      <section id="view"></section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

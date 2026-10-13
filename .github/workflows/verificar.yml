@@ -1,0 +1,19 @@
+name: Verificar
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  sintaxe:
+    name: Sintaxe
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter o código
+        uses: actions/checkout@v4
+
+      - name: Compilar o painel
+        run: python3 -m py_compile panel/server.py
+
+      - name: Conferir os scripts
+        run: bash -n backup-databases.sh backup-mysql.sh backup-postgres.sh atualizar-ip-laboratorio.sh

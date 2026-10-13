@@ -1,0 +1,53 @@
+name: Falha
+description: Algo que a Bitácula deveria fazer e não fez.
+title: "[falha] "
+labels: ["falha"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Não cole senha, dump, conteúdo de banco nem certificado. Se a falha for de segurança, escreva para araguaci@gmail.com.
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que você esperava
+      description: O comportamento certo, em uma ou duas frases.
+    validations:
+      required: true
+  - type: textarea
+    id: aconteceu
+    attributes:
+      label: O que aconteceu
+      description: Mensagem, tela ou comando. Sem segredo.
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      placeholder: |
+        1. Abri Backups
+        2. Escolhi MySQL
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: versao
+    attributes:
+      label: Commit ou versão
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: peca
+    attributes:
+      label: Onde
+      options:
+        - Painel
+        - Backup PostgreSQL
+        - Backup MySQL
+        - IP do laboratório
+        - Documentação
+        - Outro
+    validations:
+      required: true

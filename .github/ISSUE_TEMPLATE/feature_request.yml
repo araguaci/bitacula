@@ -1,0 +1,25 @@
+name: Ideia
+description: Uma capacidade nova para o diário de bordo.
+title: "[ideia] "
+labels: ["ideia"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Que situação isso resolve
+      description: Quem opera a VPS e o que falta hoje.
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: O que você imagina
+    validations:
+      required: true
+  - type: textarea
+    id: fora
+    attributes:
+      label: O que fica de fora
+      description: Para a mudança não crescer demais.
+    validations:
+      required: false

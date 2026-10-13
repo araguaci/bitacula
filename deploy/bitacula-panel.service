@@ -1,0 +1,14 @@
+[Unit]
+Description=Bitácula — painel da VPS e dos bancos
+After=network-online.target docker.service nginx.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/bitacula/panel/server.py
+Restart=on-failure
+RestartSec=3
+WorkingDirectory=/opt/bitacula/panel
+
+[Install]
+WantedBy=multi-user.target

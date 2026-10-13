@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Relato de segurança
+    url: https://github.com/araguaci/bitacula/security/policy
+    about: Vulnerabilidade e vazamento vão por e-mail, não por issue pública.

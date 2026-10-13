@@ -1,0 +1,17 @@
+# Segredos e estado local. Nunca publique.
+panel/CREDENCIAIS.txt
+panel/auth.json
+panel/tls/
+panel/last-backup.log
+panel/__pycache__/
+__pycache__/
+*.pyc
+
+# Cópias dos bancos e o IP atual do laboratório.
+backups/
+laboratorio.ip
+
+# Ambiente
+.env
+*.env
+!.env.example
