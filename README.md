@@ -1,8 +1,18 @@
 # Bitácula
 
+## 🛡️ Sentinel Status
+- **Status:** 🟡 MVP / Em Desenvolvimento
+- **Tier:** B
+- **Health:** 50% / **ROI Potencial:** TBD
+- **Stack:** Python 3.11, Bash, nginx, UFW, Docker, PostgreSQL, MySQL, Redis
+
+---
+
 Diário de bordo de uma VPS. O nome vem do livro em que o oficial de quarto anota o estado do navio: o que está no ar, quem pode entrar e o que já foi copiado para o caso de precisar voltar.
 
 **English.** Bitácula is a local ship's log for a VPS: a small admin panel, laboratory IP allowlists for database ports, and PostgreSQL and MySQL backups. It stays off the public internet except for the addresses you list.
+
+As telas, com dados de exemplo, estão no [guia](docs/GUIA.md). Dá para ver o painel sem instalar.
 
 [Contribuir](CONTRIBUTING.md) · [Conduta](CODE_OF_CONDUCT.md) · [Segurança](SECURITY.md) · [Changelog](CHANGELOG.md) · [Licença MIT](LICENSE)
 
@@ -96,6 +106,22 @@ O mesmo roda em cada push, no workflow `Verificar`.
 - Correção: pull request, com o modelo do repositório.
 - Vulnerabilidade: [SECURITY.md](SECURITY.md), por e-mail, antes de qualquer issue pública.
 - Conduta: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## Prompt da imagem hero
+
+Capa do artigo em `artigos/bitacula-hero.webp`, 1200×675. As telas do guia são capturas da interface, em `docs/img/`.
+
+```
+Hero image para artigo X.com "Trocar o IP sem apagar a outra estação".
+Dimensões exatas: 1200×675 pixels (16:9, share card / preview do artigo).
+Composição: bloco editorial central com o título "Trocar o IP sem apagar a outra estação" em destaque;
+subtítulo menor "Bitácula · diário de bordo".
+Conteúdo importante centrado, margens seguras para recorte em feed/preview.
+Tema visual: livro de quarto náutico aberto sobre uma mesa escura, duas linhas de endereço IP em tipografia mono, uma riscada e substituída, a outra intacta. Sem rostos.
+Paleta: tinta #121510, papel #f3f1e6, âmbar #e2a23a, musgo #8fbf6a.
+Estilo: documentário investigativo, data journalism, tipografia editorial bold, serifada.
+Grain sutil, sem fundo branco flat, sem emoji, sem clipart.
+```
 
 ## Licença
 
